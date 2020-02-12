@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Advanced JS Drills</title>
+    <title>Shape Up or Shape Out</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-    <script src="app.js"></script>
+    <div id='divShapeSelector'>
+        <h3>Shape Explorer</h3>
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td style="width: 150px;padding:5px">Rectangle: </td>
+                <td style="width: 250px">
+                    <label for="txtRectangleWidth">Width:</label>
+                    <input id="txtRectangleWidth" type="text" />
+                </td>
+                <td style="width: 250px">
+                    <label for="txtRectangleHeight">Height:</label>
+                    <input id="txtRectangleHeight" type="text" />
+                </td>
+                <td style="width: 100px">
+                    <button id='btnRectangle'>Insert</button></td>
+            </tr>
+            <tr>
+                <td style="width: 150px;padding:5px">Square: </td>
+                <td style="width: 250px">
+                    <label for="txtSquare">Side Length:</label>
+                    <input id="txtSquare" type="text" />
+                </td>
+                <td style="width: 100px"></td>
+                <td style="width: 250px">
+                    <button id='btnSquare'>Insert</button></td>
+            </tr>
+            <tr>
+                <td style="width: 150px;padding:5px">Circle: </td>
+                <td style="width: 250px">
+                    <label for="txtRadius" >Radius:</label>
+                    <input id="txtRadius" type="text" />
+                </td>
+                <td style="width: 100px"></td>
+                <td style="width: 250px">
+                    <button id='btnCircle'>Insert</button></td>
+            </tr>
+            <tr>
+                <td style="width: 150px;padding:0px">Isoceles Right Triangle: </td>
+                <td style="width: 250px">
+                    <label for="txtTriangle" >Height:</label>
+                    <input id="txtTriangle" type="text" />
+                </td>
+                <td style="width: 100px"></td>
+                <td style="width: 250px">
+                    <button id='btnTriangle'>Height</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="draw-container">
+
+        <div id='divSidebar'>
+            <h3>Metrics</h3>
+        </div>
+        <div id='divDraw'></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src='script.js'></script>
+
 </body>
+
 </html>
